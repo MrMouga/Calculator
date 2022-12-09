@@ -33,7 +33,7 @@ h1 {
     display:flex;
     flex-direction:column;  
     justify-content: center;
-    gap:15px;
+    grid-gap:15px;
 }
 
 .equation {
@@ -141,6 +141,8 @@ h1 {
 	inset: 0;
 	height: 100%;
 	transform: translateX(-100%);
+    pointer-events:none;
+    opacity:50;
 
 }
 .theme__icon,
@@ -252,3 +254,41 @@ h1 {
 
 
 
+@media (max-width: 600px) {
+    .div-container {
+      width: 100%;
+    }
+  
+    .button {
+      /* Change the size and position of the buttons to make them easier to use on a small screen */
+      width: 50px;
+      height: 50px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+    #equals {
+      /* Make the equals button smaller on a small screen */
+      width: 100px;
+    }
+  
+    #allClear {
+      /* Make the allClear button smaller on a small screen */
+      width: 100px;
+    }
+  }
+  
+  /* Apply styles when the screen size is between 600 and 900 pixels */
+  @media (min-width: 600px) and (max-width: 900px) {
+    .div-container {
+      /* Make the calculator take up a smaller portion of the screen on medium screens */
+      width: 75%;
+    }
+  
+    .button {
+      /* Change the size and position of the buttons to make them easier to use on a medium screen */
+      width: 60px;
+      height: 60px;
+      margin-top: 10px;}
+
+    }
