@@ -99,58 +99,86 @@ function displayOperation(input) {
 function buttonListener(){
 
     digit0.addEventListener("click", function(){
-        const input = +digit0.textContent
-        displayOperation(input)
-        })
+
+        if (num1 != '' && num2 != '' && operator != '' && total == '') {
+
+            const input = +digit0.textContent
+            displayOperation(input)
+        }
+    })
+     
 
     digit1.addEventListener("click", function(){
 
-        const input = +digit1.textContent
-        displayOperation(input)
+        if (total == '') {
+
+            const input = +digit1.textContent
+            displayOperation(input)
+        }
     })
 
     digit2.addEventListener("click", function(){
-        const input = +digit2.textContent
-        displayOperation(input)     
+
+        if (total == '') {
+            const input = +digit2.textContent
+            displayOperation(input)
+        }     
     })
 
     digit3.addEventListener("click", function(){
-        const input = +digit3.textContent
-        displayOperation(input)
+        if (total == '') {
+            const input = +digit3.textContent
+            displayOperation(input)
+        }
     })
 
     digit4.addEventListener("click", function(){
-        const input = +digit4.textContent
-        displayOperation(input)
+        if (total == '') {
+            const input = +digit4.textContent
+            displayOperation(input)
+        }
     })
 
     digit5.addEventListener("click", function(){
-        const input = +digit5.textContent
-        displayOperation(input)
+        if (total == '') {
+            const input = +digit5.textContent
+            displayOperation(input)
+        }
     })
 
     digit6.addEventListener("click", function(){
-        const input = +digit6.textContent
-        displayOperation(input)
+        if (total == '') {
+            const input = +digit6.textContent
+            displayOperation(input)
+        }
     })
 
     digit7.addEventListener("click", function(){
 
-        const input = +digit7.textContent
-        displayOperation(input)
+        if (total == '') {
+
+            const input = +digit7.textContent
+            displayOperation(input)
+        }
 
     })
 
     digit8.addEventListener("click", function(){
 
-        const input = +digit8.textContent
-        displayOperation(input)
+        if (total == '') {
+
+            const input = +digit8.textContent
+            displayOperation(input)
+        }
     })
 
     digit9.addEventListener("click", function(){
 
-        const input = +digit9.textContent
-        displayOperation(input)
+        if (total == '') {
+
+            const input = +digit9.textContent
+            displayOperation(input)
+        }
     })
 
     divide.addEventListener("click", function(){
@@ -373,3 +401,8 @@ document.addEventListener('keydown', (event) => {
 		document.getElementById('decimal').click();	
 	}
 });
+
+
+///
+
+

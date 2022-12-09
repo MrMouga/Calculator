@@ -84,7 +84,7 @@ h1 {
     align-items: center;
     justify-content: center;
     box-shadow:  2px 3px 5px 0px rgb(0 0 0 / 40%);
-    transition: transform .3s;
+    transition: transform .1s;
 
 }
 
